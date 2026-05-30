@@ -9,6 +9,8 @@ import TestimonialsSection from "@/components/sections/TestimonialsSection";
 import AboutSection       from "@/components/sections/AboutSection";
 import FaqSection         from "@/components/sections/FaqSection";
 import ContactSection     from "@/components/sections/ContactSection";
+import ReviewSection from "@/components/sections/ReviewSection";
+
 
 export default function HomePage() {
   return (
@@ -23,6 +25,7 @@ export default function HomePage() {
         <AboutSection />
         <FaqSection />
         <ContactSection />
+        <ReviewSection />
       </main>
       <Footer />
       <FloatingCTA />

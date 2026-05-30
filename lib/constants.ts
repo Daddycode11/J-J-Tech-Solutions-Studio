@@ -11,12 +11,14 @@ export const SITE = {
 
 // ─── Navigation Links ────────────────────────────────────────────────────────
 export const NAV_LINKS = [
-  { label: "Services",  href: "#services"  },
-  { label: "Portfolio", href: "#portfolio" },
-  { label: "Systems",   href: "#systems"   },
-  { label: "About",     href: "#about"     },
-  { label: "FAQ",       href: "#faq"       },
-  { label: "Contact",   href: "#contact"   },
+  { label: "Services",      href: "#services"      },
+  { label: "Portfolio",     href: "#portfolio"     },
+  { label: "Systems",       href: "#systems"       },
+  { label: "Testimonials",  href: "#testimonials"  },
+  { label: "Reviews",       href: "#reviews"       },
+  { label: "About",         href: "#about"         },
+  { label: "FAQ",           href: "#faq"           },
+  { label: "Contact",       href: "#contact"       },
 ];
 
 // ─── Services ────────────────────────────────────────────────────────────────

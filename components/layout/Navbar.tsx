@@ -24,7 +24,6 @@ export default function Navbar() {
 
         {/* Logo */}
         <a href="#" className="flex items-center gap-2.5 group">
-          {/* Actual logo image — white version on dark bg */}
           <div className="w-9 h-9 flex items-center justify-center flex-shrink-0">
             <img
               src="/logo.png"
@@ -35,7 +34,7 @@ export default function Navbar() {
           </div>
           <div className="leading-none">
             <span className="font-display font-bold text-white text-sm tracking-tight">
-              J&J Tech
+              J&amp;J Tech
             </span>
             <span className="block text-brand-muted text-[10px] tracking-widest uppercase font-body">
               Solutions Studio
@@ -44,12 +43,12 @@ export default function Navbar() {
         </a>
 
         {/* Desktop Links */}
-        <ul className="hidden md:flex items-center gap-1">
+        <ul className="hidden md:flex items-center gap-0.5">
           {NAV_LINKS.map((link) => (
             <li key={link.href}>
               <a
                 href={link.href}
-                className="px-3 py-1.5 text-sm font-body text-brand-muted hover:text-white rounded-lg hover:bg-white/5 transition-all duration-150"
+                className="px-2 py-1.5 text-xs font-body text-brand-muted hover:text-white rounded-lg hover:bg-white/5 transition-all duration-150"
               >
                 {link.label}
               </a>
@@ -88,12 +87,13 @@ export default function Navbar() {
             />
           </div>
         </button>
+
       </nav>
 
       {/* Mobile Menu */}
       <div
         className={`md:hidden overflow-hidden transition-all duration-300 ${
-          menuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          menuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
         } bg-brand-bg/95 backdrop-blur-xl border-b border-brand-border`}
       >
         <ul className="px-4 pb-4 pt-2 flex flex-col gap-1">
@@ -119,6 +119,7 @@ export default function Navbar() {
           </li>
         </ul>
       </div>
+
     </header>
   );
 }
